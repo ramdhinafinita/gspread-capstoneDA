@@ -14,6 +14,9 @@ Data yang digunakan pada capstone project ini adalah dari data African Economic 
 - `units` : Tipe aplikasi (berbayar/gratis)       
 - `1980 - 2020` : Tahun data      
 
+<p align="center" width="100%">
+<![image](https://user-images.githubusercontent.com/64061969/203851497-6e544330-284a-4f7f-a68c-b8637f424574.png)>
+</p>
 
 Antarmuka sederhana untuk bekerja dengan Google Sheets.
 
