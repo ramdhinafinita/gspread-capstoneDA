@@ -1,10 +1,22 @@
-# Telegram Chatbot
+# Gspread Notebook
 
-This is developed as one of [Algoritma Academy](https://algorit.ma/) Data Analytics Specialization Capstone Projects. The deliverable of this project is a Python script to create a Telegram chatbot using `telebot` package. We will also deploy the chatbot to [Heroku](https://herokuapp.com/) and use `Flask` to set up the backend application.
+Projek ini dikembangkan sebagai salah satu capstone project dari Algoritma Academy Data Analytics Specialization. Deliverables yang diharapkan dari projek ini adalah melakukan analisis data dengan menggunakan library `gspread` untuk mendapatkan informasi dan dikemas dengan rapih dalam notebook. Terdapat 5 task yang perlu dikerjakan dan diakhiri dengan uploading file hasil analisa.
 
-## Rubrics
+## Dependencies
 
-The maximum score you will obtain from this project is 16 points:  
+- gspread
+- oauthlib
+- pandas
+
+Atau Bapak/Ibu cukup menginstall requirements.txt dengan cara berikut
+
+```python
+pip install -r requirements.txt
+```
+
+## Rubrik
+
+Maksimal skor yang akan didapatkan yakni 16 points:  
 
 - **Setup (3 points)**
     - [ ] **Prepare virtual environment**
@@ -36,39 +48,29 @@ The maximum score you will obtain from this project is 16 points:
 ## Project File Structure
 
 ```
-telebot
+gspred
 ├── 📁 assets
-├── 📁 cache
 ├── 📁 data_input
-├── 📁 template_text
 ├── </> app.py
-├── </> bot_local.py
 ├── 📝 Notebook Guide.ipynb
-├── 🚀 Procfile
-├── 📝 requirements.txt
-└── 📝 runtime.txt
+└── 📝 requirements.txt
 ```
 
 - Folders (**DO NOT CHANGE**):
     - `assets`: Images used in notebook
-    - `cache`: Pickled Python object
-    - `data_input`: Dataset for analysis
-    - `template_text`: Text files for chat template
+    - `data_input`: Dataset untuk analisis
 
 - Application-related Files (**TO BE COMPLETED BY STUDENT**):
-    - `app.py`: Main `Flask` application
-    - `bot_local.py`: Telegram bot to be run locally
-    - `Notebook Guide.ipynb`: Main guide for the project workflow
+    - `app.py`: gspread untuk dijalankan secara lokal
+    - `Notebook Guide.ipynb`: Panduan utama untuk alur kerja proyek
 
 - Deployment-related Files (**DO NOT CHANGE**):
     - `.gitignore`: List of file extensions to be ignored when `git push` from local
-    - `Procfile`: Commands for app's dynos on Heroku
-    - `requirements.txt`: List of package dependencies to be installed on Heroku
-    - `runtime.txt`: Python version to be installed on Heroku
+    - `requirements.txt`: Daftar dependensi paket yang akan diinstall
 
 ## Expected Output
 
-### Telegram Bot Account
+### Plot Analisis
 
 Create a bot that can provide report on Facebook daily ads for different marketing campaign. Here is an example: https://t.me/algo_capstone_telebot
 
@@ -87,7 +89,7 @@ Here are the chatbot functionalities:
 2. Command `/about`: send information about the bot developer.
 
 <p align="center" width="100%">
-    <img src="assets/readme/about.png" width="350px"> 
+    <img src="assets/output.png""> 
 </p>
 
 3. Command `/summary`: generate text report for selected campaign ID.
