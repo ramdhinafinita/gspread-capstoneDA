@@ -15,7 +15,7 @@ Data yang digunakan pada capstone project ini adalah dari data African Economic 
 - `1980 - 2020` : Tahun data      
 
 ![image](https://user-images.githubusercontent.com/64061969/203851497-6e544330-284a-4f7f-a68c-b8637f424574.png)
-https://hub.arcgis.com/datasets/07610d73964e4d39ab62c4245d548625_0/explore?location=2.910951%2C-148.773003%2C2.85
+[Maps Africa](https://hub.arcgis.com/datasets/07610d73964e4d39ab62c4245d548625_0/explore?location=2.910951%2C-148.773003%2C2.85)<br>
 Antarmuka sederhana untuk bekerja dengan Google Sheets.
 
 Features:
@@ -73,11 +73,11 @@ Maksimal skor yang akan didapatkan yakni 16 points:
       - Mengambil kredensial pada akun google cloud masing-masing.
     - [ ] **Cek data dari hasil spreadsheet**
       - Important: Sebelum masuk kedalam tahap analisis, wajib melampirkan keterangan hasil buka file dengan kode berikut:
-      ```
-gc = gspread.authorize(credentials)
-sh = gc.open_by_url("________________________________") # Link Spreadsheet
-worksheet = sh.worksheet("________") # Nama sheet
-list_of_lists = worksheet.get_all_values()
+      ``` python
+      gc = gspread.authorize(credentials)
+      sh = gc.open_by_url("________________________________") # Link Spreadsheet
+      worksheet = sh.worksheet("________") # Nama sheet
+      list_of_lists = worksheet.get_all_values()
       ```
 
 - **Analisis Data**
@@ -134,7 +134,7 @@ Create a bot that can provide report on Facebook daily ads for different marketi
 
 Here are the chatbot functionalities:
 
-1. Command `/start` or `/help`: send welcome message containing list of available commands.
+1. Berhasil mendapatkan kredensial dari Google Clouds API 
 
 <p align="center" width="100%">
     <img src="assets/readme/start.png" width="350px"> 
