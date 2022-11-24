@@ -15,10 +15,7 @@ Data yang digunakan pada capstone project ini adalah dari data African Economic 
 - `1980 - 2020` : Tahun data      
 
 ![image](https://user-images.githubusercontent.com/64061969/203851497-6e544330-284a-4f7f-a68c-b8637f424574.png)
-<p align="center" width="100%">
-    <img src="assets/africa.geojson">
-</p>
-
+https://hub.arcgis.com/datasets/07610d73964e4d39ab62c4245d548625_0/explore?location=2.910951%2C-148.773003%2C2.85
 Antarmuka sederhana untuk bekerja dengan Google Sheets.
 
 Features:
