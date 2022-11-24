@@ -1,7 +1,9 @@
 # Google Spreadsheets 
- [![GitHub version](https://badge.fury.io/gh/burnash%2Fgspread.svg)](https://badge.fury.io/gh/burnash%2Fgspread) ![pypi]( https://badge.fury.io/py/gspread.svg) ![downloads](https://img.shields.io/pypi/dm/gspread.svg) ![doc](https://readthedocs.org/projects/gspread/badge/?version=latest)
+<p align="center" width="100%">
+    <img src="assets/gspread.png"> 
+</p>
  
-Projek ini dikembangkan sebagai salah satu capstone project dari Algoritma Academy Data Analytics Specialization. Deliverables yang diharapkan dari projek ini adalah melakukan analisis data dengan menggunakan library `gspread` untuk mendapatkan informasi dan dikemas dengan rapih dalam notebook. Terdapat 5 task yang perlu dikerjakan dan diakhiri dengan uploading file hasil analisa.
+Projek ini dikembangkan sebagai salah satu capstone project dari Algoritma Academy Data Analytics Specialization. Deliverables yang diharapkan dari projek ini adalah melakukan analisis data dengan menggunakan library `gspread` untuk mendapatkan informasi dan dikemas dengan rapih dalam notebook. Tahapan langkah untuk data preparation dapat dilihat pada [link berikut](). Terdapat 5 task yang perlu dikerjakan dan diakhiri dengan uploading file hasil analisa. 
 
 ## Data Summary
 Data yang digunakan pada capstone project ini adalah dari data African Economic Outlook January 2019. Data ini terdiri dari beberapa variabe dengan rincian sebagai berikut:
@@ -128,9 +130,6 @@ gspred
 
 Create a bot that can provide report on Facebook daily ads for different marketing campaign. Here is an example: https://t.me/algo_capstone_telebot
 
-<p align="center" width="100%">
-    <img src="assets/readme/telegram-bot.png" width="350px"> 
-</p>
 
 Here are the chatbot functionalities:
 
