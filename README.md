@@ -83,10 +83,10 @@ Maksimal skor yang akan didapatkan yakni 16 points:
       ```
 
 - **Analisis Data**
-    - **Data cleansing (3 points)**
+    - **Data cleansing (4 points)**
         - [ ] melakukan pengisian data NaN.
               Task 1: Hapus nama-nama selain nama negara pada kolom Country and Regions Name.
-    - **Summary text report: `/summary` (5 points)**
+    - **Summary text report: `/summary` (6 points)**
         - [ ] Menampilkan hasil analisis:
               Task 2: Buat dataframe baru dengan menyeleksi kolom `Indicators Name` berdasarkan indikator `Gross domestic product`.
               Task 3: Carilah negara mana yang memiliki GDP terbersar dan terkecil pada tahun 2020.
@@ -128,24 +128,23 @@ gspred
 
 ### Plot Analisis
 
-Create a bot that can provide report on Facebook daily ads for different marketing campaign. Here is an example: https://t.me/algo_capstone_telebot
 
 
 Here are the chatbot functionalities:
 
-1. Berhasil mendapatkan kredensial dari Google Clouds API 
+1. Berhasil mendapatkan kredensial dari `Google Clouds API`
 
 <p align="center" width="100%">
-    <img src="assets/readme/start.png" width="350px"> 
+    <img src="assets/get.png"> 
 </p>
 
-2. Command `/about`: send information about the bot developer.
+2. Membuat analisis berdasarkan `lineplot`
 
 <p align="center" width="100%">
     <img src="assets/output.png""> 
 </p>
 
-3. Command `/summary`: generate text report for selected campaign ID.
+3. Berhasil upload hasil google spreadsheet
 
 <p align="center" width="100%">
     <img src="assets/readme/summary-1.png" width="350px">
@@ -189,4 +188,3 @@ Reply from bot after campaign ID is selected:
     <img src="assets/readme/deployed-app.png" width="350px"> 
 </p>
 
-This bot is expected to run **continuously** on a server. Therefore we create a `Flask` application which deployed to Heroku. Here is an example: https://algo-capstone-telebot.herokuapp.com/.
