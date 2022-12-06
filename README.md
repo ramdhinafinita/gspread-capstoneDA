@@ -2,8 +2,12 @@
 <p align="center" width="100%">
     <img src="assets/gspread.png"> 
 </p>
- 
-Projek ini dikembangkan sebagai salah satu capstone project dari Algoritma Academy Data Analytics Specialization. Deliverables yang diharapkan dari projek ini adalah melakukan analisis data dengan menggunakan library `gspread` untuk mendapatkan informasi dan dikemas dengan rapih dalam notebook. Tahapan langkah untuk data preparation dapat dilihat pada [link berikut](). Terdapat 5 task yang perlu dikerjakan dan diakhiri dengan uploading file hasil analisa. 
+
+## Background
+Pembuatan notebook dan spreadsheet dengan menggunakan data `African Economic Outlook January 2019`. Notebook yang dibuat akan menghasilkan beberapa insight untuk menjawab permasalahan yang ada dan dapat dijadikan bahan pembelajaran mengenai ekonomi di Negara-negara di Benua Afrika. Latar belakang dari visualisasi data dengan Notebook beserta analisis dan narasi digunakan untuk membantu menganalisis perkembangan ekonomi di negara tersebut dimana seperti yang kita ketahui, negara-negara di Afrika selalu dinilai menjadi Benua Afrika merupakan benua yang kondisi ekonominya di bawah benua-benua lainnya. Namun, dengan dibuatnya sebuah dashboard interaktif dari data tersebut kita mengajak audience dalam melakukan analisa lebih jauh seperti mengurutkan negara-negara di Benua Afrika berdasarkan klasifikasi indikator penliai serta membandingkan dengan negara-negara lain di Benua Afrika tersebut.
+
+
+Projek ini dikembangkan sebagai salah satu capstone project dari Algoritma Academy Data Analytics Specialization. Deliverables yang diharapkan dari projek ini adalah melakukan analisis data dengan menggunakan library `gspread` untuk mendapatkan informasi dan dikemas dengan rapih dalam notebook. Tahapan langkah untuk data preparation dapat dilihat pada [link berikut](https://scribehow.com/shared/Google_Workflow__q-35_aWiQnONzLsEHobAhQ). Terdapat 5 task yang perlu dikerjakan dan diakhiri dengan uploading file hasil analisa. 
 
 ## Data Summary
 Data yang digunakan pada capstone project ini adalah dari data African Economic Outlook January 2019. Data ini terdiri dari beberapa variabe dengan rincian sebagai berikut:
@@ -20,17 +24,9 @@ Data yang digunakan pada capstone project ini adalah dari data African Economic 
 [Maps Africa](https://hub.arcgis.com/datasets/07610d73964e4d39ab62c4245d548625_0/explore?location=2.910951%2C-148.773003%2C2.85)<br>
 Antarmuka sederhana untuk bekerja dengan Google Sheets.
 
-Features:
-
-* Buka spreadsheet berdasarkan **title**, **key** atau **url**.
-* Read, write, and format cell ranges.
-* Berbagi dan kontrol akses.
-* Pembaruan batch.
-
-
 ## Dependencies
- 
-- gspread -> Requirements: Python 3.6+.
+
+- gspread -> Requirements: Python 3.9+.
 - oauthlib
 - pandas
 
@@ -38,29 +34,6 @@ Atau Bapak/Ibu cukup menginstall requirements.txt dengan cara berikut
 
 ```python
 pip install -r requirements.txt
-```
-## Basic Usage
-
-1. [Create credentials in Google API Console](http://gspread.readthedocs.org/en/latest/oauth2.html)
-2. Start using gspread:
-
-```python
-import gspread
-
-### Contoh
-gc = gspread.service_account()
-
-# Open a sheet from a spreadsheet in one go
-wks = gc.open("Where is the money Lebowski?").sheet1
-
-# Update a range of cells using the top left corner address
-wks.update('A1', [[1, 2], [3, 4]])
-
-# Or update a single cell
-wks.update('B42', "it's down there somewhere, let me take another look.")
-
-# Format the header
-wks.format('A1:B1', {'textFormat': {'bold': True}})
 ```
 
 ## Rubrik
@@ -83,10 +56,10 @@ Maksimal skor yang akan didapatkan yakni 16 points:
       ```
 
 - **Analisis Data**
-    - **Data cleansing (4 points)**
+    - **Data cleansing (3 points)**
         - [ ] melakukan pengisian data NaN.
               Task 1: Hapus nama-nama selain nama negara pada kolom Country and Regions Name.
-    - **Summary text report: `/summary` (6 points)**
+    - **Summary text report: `/summary` (4 points)**
         - [ ] Menampilkan hasil analisis:
               Task 2: Buat dataframe baru dengan menyeleksi kolom `Indicators Name` berdasarkan indikator `Gross domestic product`.
               Task 3: Carilah negara mana yang memiliki GDP terbersar dan terkecil pada tahun 2020.
@@ -96,9 +69,10 @@ Maksimal skor yang akan didapatkan yakni 16 points:
         - [ ] Perform the right **mathematical calculation**
         - [ ] Task 5: Buatlah dataframe baru dengan informasi presentase ekspor GDP dari semua negara di Afrika.
         - [ ] **Tidy** plot layout (title, label, color, size)
+        
 - **Application deployment (3 points)**
     - [ ] **`app.py`** untuk membuat notebook berjalan otomatis di local
-    - [ ] **gspread** menggunakan library gspread 
+    - [ ] **`gspread`** menggunakan library gspread (Task 6)
     - [ ] **`app.py`** run berhasil tanpa error
 
 ## Project File Structure
@@ -124,67 +98,17 @@ gspred
     - `.gitignore`: List of file extensions to be ignored when `git push` from local
     - `requirements.txt`: Daftar dependensi paket yang akan diinstall
 
-## Expected Output
+## Ekspektasi Luaran
 
-### Plot Analisis
-
-
-
-Here are the chatbot functionalities:
-
-1. Berhasil mendapatkan kredensial dari `Google Clouds API`
-
-<p align="center" width="100%">
-    <img src="assets/get.png"> 
-</p>
-
-2. Membuat analisis berdasarkan `lineplot`
+**Task 1:** Hapus nama-nama selain nama negara pada kolom Country and Regions Name<br>
+**Task 2:** Buat dataframe baru dengan menyeleksi kolom Indicators Name berdasarkan indikator Gross domestic product<br>
+**Task 3:** Carilah negara mana yang memiliki GDP terbersar dan terkecil pada tahun 2020<br>
+**Task 4:** Carilah progress ekspor dari negara dengan GDP terbesar dan terkecil kemudian buatlah visualisasinya<br>
 
 <p align="center" width="100%">
     <img src="assets/output.png""> 
 </p>
 
-3. Berhasil upload hasil google spreadsheet
-
-<p align="center" width="100%">
-    <img src="assets/readme/summary-1.png" width="350px">
-</p>
-
-Reply from bot after campaign ID is selected:
-
-<p align="center" width="100%">
-    <img src="assets/readme/summary-2.png" width="350px">
-</p>
-
-4. Command `/plot`: generate visualization and voice message report per age group for selected campaign ID.
-
-<p align="center" width="100%">
-    <img src="assets/readme/plot-1.png" width="350px">
-</p>
-
-Reply from bot after campaign ID is selected:
-
-<p align="center" width="100%">
-    <img src="assets/readme/plot-2.png" width="350px">
-</p>
-
-**Voice message:** 
-<a href="https://drive.google.com/file/d/16hVORo-heUOjWje_g62aV6380-toBwWp/view?usp=sharing" target="_blank">Sample audio for Campaign ID 916</a>
-
-> This is your requested plot for Campaign ID 916.
-> Age group with the highest total spent is 30-34, while the lowest is 40-44. 
-> Age group with the highest total approved conversion is 30-34, while the lowest is 45-49.
-> Age group with the highest average CPC is 45-49, while the lowest is 40-44.
-
-5. Default message: handle messages other than the previous commands.
-
-<p align="center" width="100%">
-    <img src="assets/readme/default-message.png" width="350px">
-</p>
-
-### Deployed Application
-
-<p align="center" width="100%">
-    <img src="assets/readme/deployed-app.png" width="350px"> 
-</p>
-
+**Task 5:** Buatlah dataframe baru dengan informasi presentase ekspor GDP dari semua negara di Afrika.<br>
+**Task 6:** Upload data yang sudah bersih di spreadsheet<br>
+**Extra** > Berhasil menjalankan `app.py` tanpa error<br>
